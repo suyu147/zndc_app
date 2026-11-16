@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-16",
+  "scope": "app",
+  "mode": "redesign",
+  "depth": "full",
+  "brand": "existing zndc teal, BOSS layout reference only",
+  "citations": [
+    "src/App.vue:14",
+    "src/pages.json:1",
+    "src/api/request.ts:1",
+    "src/hr/api.ts:1"
+  ],
+  "kept": [
+    "routes",
+    "events",
+    "API calls",
+    "business facts"
+  ],
+  "introduced": [
+    "semantic tokens",
+    "line icons",
+    "flat task sections"
+  ],
+  "git": "not a git repository; originals backed up",
+  "before": ".hallmark/before.json"
+}

@@ -1,0 +1,174 @@
+{
+  "pages": [
+    {
+      "path": "pages/overview/overview",
+      "style": { "navigationBarTitleText": "职能洞察", "enablePullDownRefresh": false }
+    },
+    {
+      "path": "pages/jobs/jobs",
+      "style": { "navigationBarTitleText": "岗位探索", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages/favorites/favorites",
+      "style": { "navigationBarTitleText": "我的收藏", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": { "navigationBarTitleText": "我的" }
+    },
+    {
+      "path": "pages/login/login",
+      "style": { "navigationBarTitleText": "登录", "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/job-detail/job-detail",
+      "style": { "navigationBarTitleText": "岗位详情" }
+    },
+    {
+      "path": "pages/role-pick/role-pick",
+      "style": { "navigationBarTitleText": "选择目标岗位" }
+    },
+    {
+      "path": "pages/diagnosis/diagnosis",
+      "style": { "navigationBarTitleText": "能力诊断" }
+    },
+    {
+      "path": "pages/assistant/assistant",
+      "style": { "navigationBarTitleText": "职业助手" }
+    },
+    {
+      "path": "pages/interview/interview",
+      "style": { "navigationBarTitleText": "AI 模拟面试" }
+    },
+    {
+      "path": "pages/webview/webview",
+      "style": { "navigationBarTitleText": "来源链接" }
+    },
+
+    {
+      "path": "pages-hr/workbench/workbench",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages-hr/positions/positions",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages-hr/candidates/candidates",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages-hr/insight/insight",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages-hr/mine/mine",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages-hr/position-detail/position-detail",
+      "style": { "navigationBarTitleText": "职位详情" }
+    },
+    {
+      "path": "pages-hr/position-edit/position-edit",
+      "style": { "navigationBarTitleText": "发布职位" }
+    },
+    {
+      "path": "pages-hr/candidate-detail/candidate-detail",
+      "style": { "navigationBarTitleText": "候选人详情" }
+    },
+    {
+      "path": "pages-hr/interviews/interviews",
+      "style": { "navigationBarTitleText": "面试管理" }
+    },
+    {
+      "path": "pages-hr/messages/messages",
+      "style": { "navigationBarTitleText": "沟通" }
+    },
+    {
+      "path": "pages-hr/chat/chat",
+      "style": { "navigationBarTitleText": "沟通详情" }
+    },
+
+    {
+      "path": "pages-admin/dashboard/dashboard",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages-admin/datasets/datasets",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages-admin/datasets/dataset-detail",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages-admin/reviews/reviews",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages-admin/reviews/review-detail",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages-admin/versions/versions",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages-admin/versions/version-detail",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages-admin/quality/quality",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages-admin/mine/mine",
+      "style": { "navigationStyle": "custom" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "职能洞察",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F6F8"
+  },
+  "tabBar": {
+    "color": "#8F95A1",
+    "selectedColor": "#00BEBD",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/overview/overview",
+        "text": "首页",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home-active.png"
+      },
+      {
+        "pagePath": "pages/jobs/jobs",
+        "text": "岗位",
+        "iconPath": "static/tab/job.png",
+        "selectedIconPath": "static/tab/job-active.png"
+      },
+      {
+        "pagePath": "pages/diagnosis/diagnosis",
+        "text": "能力诊断",
+        "iconPath": "static/tab/diagnosis.png",
+        "selectedIconPath": "static/tab/diagnosis-active.png"
+      },
+      {
+        "pagePath": "pages/assistant/assistant",
+        "text": "职业助手",
+        "iconPath": "static/tab/assistant.png",
+        "selectedIconPath": "static/tab/assistant-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "static/tab/mine.png",
+        "selectedIconPath": "static/tab/mine-active.png"
+      }
+    ]
+  }
+}

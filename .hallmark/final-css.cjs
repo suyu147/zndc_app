@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('tokens.css','utf8');s=s.replace(/calc\(\s*(-?[\d.]+)\s*\*\s*var\(--rpx\)\s*\)/g,(_,v)=>(Number(v)*.5)+'px').replace(/\n:root \{ --rpx: \.5px; \}\s*$/,'');fs.writeFileSync('tokens.css',s);console.log('CSS calculations resolved.');

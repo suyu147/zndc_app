@@ -1,0 +1,214 @@
+{
+  "summary": {
+    "fails": 0,
+    "reflex": 0,
+    "warns": 22,
+    "waived": 0,
+    "rejected": 0,
+    "answered": 0,
+    "dismissed": 0,
+    "notes": 0,
+    "files": 42,
+    "render": "off"
+  },
+  "findings": [
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-admin\\datasets\\dataset-detail.vue",
+      "line": 29,
+      "evidence": "long clickable label \"{{ syncing ? \"同步中…\" : \"同步图谱\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-admin\\datasets\\dataset-detail.vue",
+      "line": 101,
+      "evidence": "long clickable label \"{{ saving ? \"保存中…\" : \"保存\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-admin\\datasets\\datasets.vue",
+      "line": 44,
+      "evidence": "long clickable label \"{{ uploading ? \"上传中…\" : \"上传并登记\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-admin\\quality\\quality.vue",
+      "line": 56,
+      "evidence": "long clickable label \"{{ exporting ? \"生成中…\" : \"导出质量报告 (JS…\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-admin\\reviews\\review-detail.vue",
+      "line": 86,
+      "evidence": "long clickable label \"{{ acting ? \"处理中…\" : \"通过复核\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-admin\\reviews\\review-detail.vue",
+      "line": 95,
+      "evidence": "long clickable label \"{{ saving ? \"保存中…\" : \"保存草稿更新\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-admin\\versions\\version-detail.vue",
+      "line": 18,
+      "evidence": "long clickable label \"{{ acting ? \"发布中…\" : \"发布上线\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-hr\\candidate-detail\\candidate-detail.vue",
+      "line": 194,
+      "evidence": "long clickable label \"{{ candidate.stage === \"rejected\" ?…\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages-hr\\position-edit\\position-edit.vue",
+      "line": 160,
+      "evidence": "long clickable label \"{{ isEdit ? \"保存并更新\" : \"立即发布\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\diagnosis\\diagnosis.vue",
+      "line": 46,
+      "evidence": "long clickable label \"{{ resumeBusy ? '解析中 ' + resumeProg…\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\diagnosis\\diagnosis.vue",
+      "line": 95,
+      "evidence": "long clickable label \"{{ busy ? \"诊断分析中…\" : \"开始诊断\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\diagnosis\\diagnosis.vue",
+      "line": 198,
+      "evidence": "long clickable label \"{{ pathBusy ? \"生成中，约需 10~60 秒…\" : l…\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\interview\\interview.vue",
+      "line": 28,
+      "evidence": "long clickable label \"{{ resumeBusy ? '解析中…' : '上传新简历' }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\interview\\interview.vue",
+      "line": 60,
+      "evidence": "long clickable label \"{{ busy ? \"正在生成题目…\" : \"开始面试\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\interview\\interview.vue",
+      "line": 94,
+      "evidence": "long clickable label \"{{ answerBusy ? \"AI 评估中…\" : \"提交本答案\"…\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\interview\\interview.vue",
+      "line": 104,
+      "evidence": "long clickable label \"{{ reportBusy ? \"报告生成中，约 30~90 秒…\" …\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\pages\\login\\login.vue",
+      "line": 8,
+      "evidence": "long clickable label \"{{ loading ? \"登录中…\" : \"登录\" }}\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "F4",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "base.css",
+      "line": 21,
+      "evidence": "3 filled primary-button recipes: .btn-primary + .btn-secondary + .hr-btn--primary",
+      "fix": "One filled primary per page; demote the rest to outline/quiet variants"
+    },
+    {
+      "gate": "F4",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "src\\pages-hr\\position-edit\\position-edit.vue",
+      "line": 666,
+      "evidence": "2 filled primary-button recipes: .stepper-btn + .bar-btn--primary",
+      "fix": "One filled primary per page; demote the rest to outline/quiet variants"
+    },
+    {
+      "gate": "F4",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "src\\pages\\diagnosis\\diagnosis.vue",
+      "line": 646,
+      "evidence": "4 filled primary-button recipes: .resume-btn + .resume-btn.ghost + .add-btn + .btn-s…",
+      "fix": "One filled primary per page; demote the rest to outline/quiet variants"
+    },
+    {
+      "gate": "F7",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "src\\pages-admin\\reviews\\review-detail.vue",
+      "line": 249,
+      "evidence": "same container recipe on 6 selectors (.hero-type, .chip, .chip-req, .chip-bonus...)",
+      "fix": "Vary weight, radius, or fill by role; not every box is the same box"
+    },
+    {
+      "gate": "F16",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "tokens.css",
+      "line": 1,
+      "evidence": "browser surfaces unthemed: scrollbar-color",
+      "fix": "Theme the parts you did not draw from the palette"
+    }
+  ]
+}

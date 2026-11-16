@@ -1,0 +1,736 @@
+{
+ "v": 1,
+ "at": "2026-11-16T13:36:16.844Z",
+ "scope": "app",
+ "summary": {
+  "fails": 1351,
+  "reflex": 28,
+  "warns": 93
+ },
+ "files": {
+  "src\\App.vue": {
+   "handlers": [],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\components\\admin-navbar.vue": {
+   "handlers": [
+    "@tap=\"$emit('titleTap')\"",
+    "@tap=\"onBack\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\components\\admin-tabbar.vue": {
+   "handlers": [
+    "@tap=\"onTap(tab)\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\components\\hr-avatar.vue": {
+   "handlers": [],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\components\\hr-funnel.vue": {
+   "handlers": [],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\components\\hr-navbar.vue": {
+   "handlers": [
+    "@tap=\"$emit('titleTap')\"",
+    "@tap=\"onBack\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\components\\hr-ring.vue": {
+   "handlers": [],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\components\\hr-tabbar.vue": {
+   "handlers": [
+    "@tap=\"onTap(tab)\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\assistant\\assistant.vue": {
+   "handlers": [
+    "@confirm=\"send\"",
+    "@tap=\"agentMode = mode.value\"",
+    "@tap=\"askQuick(q)\"",
+    "@tap=\"closeHistory\"",
+    "@tap=\"deleteHistory(item.id)\"",
+    "@tap=\"loadHistory(item.id)\"",
+    "@tap=\"newChat\"",
+    "@tap=\"openHistory\"",
+    "@tap=\"openUrl(ev.url)\"",
+    "@tap=\"removeCtx(chip.key)\"",
+    "@tap=\"send\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [
+    "chat-bottom"
+   ],
+   "scripts": []
+  },
+  "src\\pages\\diagnosis\\diagnosis.vue": {
+   "handlers": [
+    "@change=\"onEducation\"",
+    "@change=\"onExperience\"",
+    "@change=\"onWorkStyle(index, $event)\"",
+    "@confirm=\"addSkills\"",
+    "@tap=\"addSkills\"",
+    "@tap=\"askAssistant\"",
+    "@tap=\"buildPath\"",
+    "@tap=\"chooseRole\"",
+    "@tap=\"chooseRole(true)\"",
+    "@tap=\"goForm\"",
+    "@tap=\"openResumePicker\"",
+    "@tap=\"removeResume\"",
+    "@tap=\"runMatch\"",
+    "@tap=\"toggleSkill(skill)\"",
+    "@tap=\"toggleSkill(skill.name)\"",
+    "@tap=\"toggleStage(idx)\"",
+    "@tap=\"uploadResumeFile\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\favorites\\favorites.vue": {
+   "handlers": [
+    "@tap.stop=\"remove(item)\"",
+    "@tap=\"openDetail(item.roleId)\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\interview\\interview.vue": {
+   "handlers": [
+    "@tap=\"chooseRole\"",
+    "@tap=\"generateReport\"",
+    "@tap=\"openResumePicker\"",
+    "@tap=\"questionCount = count\"",
+    "@tap=\"restart\"",
+    "@tap=\"startInterview\"",
+    "@tap=\"submitAnswer\"",
+    "@tap=\"toggleQA(qi)\"",
+    "@tap=\"uploadResumeFile\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\job-detail\\job-detail.vue": {
+   "handlers": [
+    "@tap=\"aiAction('assistant')\"",
+    "@tap=\"aiAction('diagnosis')\"",
+    "@tap=\"aiAction('interview')\"",
+    "@tap=\"companyExpanded = !companyExpanded\"",
+    "@tap=\"openCompany(company)\"",
+    "@tap=\"toggleFavorite\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\jobs\\jobs.vue": {
+   "handlers": [
+    "@confirm=\"reload\"",
+    "@tap=\"keyword = ''; reload()\"",
+    "@tap=\"openDetail(job)\"",
+    "@tap=\"reload\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\login\\login.vue": {
+   "handlers": [
+    "@confirm=\"handleLogin\"",
+    "@tap=\"checkHealth\"",
+    "@tap=\"handleLogin\"",
+    "@tap=\"portalIndex = index\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\overview\\overview.vue": {
+   "handlers": [
+    "@tap=\"checkHealth\"",
+    "@tap=\"goJobs\"",
+    "@tap=\"openJob(job)\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\profile\\profile.vue": {
+   "handlers": [
+    "@tap=\"checkHealth\"",
+    "@tap=\"goFavorites\"",
+    "@tap=\"goHrPortal\"",
+    "@tap=\"logout\"",
+    "@tap=\"relogin\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\role-pick\\role-pick.vue": {
+   "handlers": [
+    "@confirm=\"search\"",
+    "@input=\"onInput\"",
+    "@tap=\"pick(item)\"",
+    "@tap=\"search\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages\\webview\\webview.vue": {
+   "handlers": [],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\dashboard\\dashboard.vue": {
+   "handlers": [
+    "@tap=\"goDatasets\"",
+    "@tap=\"goReviews\"",
+    "@tap=\"goRisk(risk)\"",
+    "@tap=\"goVersions\"",
+    "@tap=\"item.route ? goFunnel(item) : null\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\datasets\\dataset-detail.vue": {
+   "handlers": [
+    "@tap.self=\"showEdit = false\"",
+    "@tap=\"edit.boundary = 'formal'\"",
+    "@tap=\"edit.boundary = 'review'\"",
+    "@tap=\"onSync\"",
+    "@tap=\"showEdit = false\"",
+    "@tap=\"showEdit = true\"",
+    "@tap=\"submitEdit\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\datasets\\datasets.vue": {
+   "handlers": [
+    "@tap=\"changeFilter(opt.value)\"",
+    "@tap=\"chooseFile\"",
+    "@tap=\"form.boundary = 'formal'\"",
+    "@tap=\"form.boundary = 'review'\"",
+    "@tap=\"loadMore\"",
+    "@tap=\"openDetail(item.id)\"",
+    "@tap=\"showCreate = !showCreate\"",
+    "@tap=\"showCreate = false\"",
+    "@tap=\"submitCreate\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\mine\\mine.vue": {
+   "handlers": [
+    "@tap=\"goDatasets\"",
+    "@tap=\"goQuality\"",
+    "@tap=\"goReviews\"",
+    "@tap=\"onLogout\"",
+    "@tap=\"switchTo('enterprise')\"",
+    "@tap=\"switchTo('personal')\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\quality\\quality.vue": {
+   "handlers": [
+    "@tap=\"exportJson\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\reviews\\review-detail.vue": {
+   "handlers": [
+    "@tap=\"onApprove\"",
+    "@tap=\"onReject\"",
+    "@tap=\"onSaveEdit\"",
+    "@tap=\"showEdit = !showEdit\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\reviews\\reviews.vue": {
+   "handlers": [
+    "@tap=\"changeFilter(opt.value)\"",
+    "@tap=\"loadMore\"",
+    "@tap=\"openDetail(item.id)\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\versions\\version-detail.vue": {
+   "handlers": [
+    "@tap=\"onDraft\"",
+    "@tap=\"onPublish\"",
+    "@tap=\"onUnpublish\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-admin\\versions\\versions.vue": {
+   "handlers": [
+    "@tap=\"openDetail(item.id)\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\candidate-detail\\candidate-detail.vue": {
+   "handlers": [
+    "@tap=\"advance\"",
+    "@tap=\"candidate.stage === 'rejected' ? restore() : reject()\"",
+    "@tap=\"copy(candidate.email)\"",
+    "@tap=\"copy(candidate.phone)\"",
+    "@tap=\"goInterviews\"",
+    "@tap=\"openChat\"",
+    "@tap=\"openPosition(candidate.positionId)\"",
+    "@tap=\"toggleReport(item.id)\""
+   ],
+   "links": [],
+   "fields": [
+    "candidate.name"
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\candidates\\candidates.vue": {
+   "handlers": [
+    "@confirm=\"load\"",
+    "@tap=\"advance(candidate)\"",
+    "@tap=\"clearKeyword\"",
+    "@tap=\"openDetail(candidate.id)\"",
+    "@tap=\"pickScore(item.value)\"",
+    "@tap=\"pickStage(tab.value)\"",
+    "@tap=\"reject(candidate)\"",
+    "@tap=\"restore(candidate.id)\"",
+    "@tap=\"toggleSort\""
+   ],
+   "links": [],
+   "fields": [
+    "candidate.name"
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\chat\\chat.vue": {
+   "handlers": [
+    "@confirm=\"send\"",
+    "@tap=\"draft = text\"",
+    "@tap=\"send\""
+   ],
+   "links": [],
+   "fields": [
+    "name",
+    "我"
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\insight\\insight.vue": {
+   "handlers": [],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [
+    "areaFill"
+   ],
+   "scripts": []
+  },
+  "src\\pages-hr\\interviews\\interviews.vue": {
+   "handlers": [
+    "@tap=\"openCandidate(item.candidateId)\"",
+    "@tap=\"pickTab(tab.value)\"",
+    "@tap=\"toggleReport(item.id)\""
+   ],
+   "links": [],
+   "fields": [
+    "item.candidateName"
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\messages\\messages.vue": {
+   "handlers": [
+    "@tap=\"openChat(item)\""
+   ],
+   "links": [],
+   "fields": [
+    "item.candidateName"
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\mine\\mine.vue": {
+   "handlers": [
+    "@tap=\"comingSoon('招聘设置')\"",
+    "@tap=\"expandedInfo = !expandedInfo\"",
+    "@tap=\"expandedTeam = !expandedTeam\"",
+    "@tap=\"goCandidates\"",
+    "@tap=\"goInterviews\"",
+    "@tap=\"goPositions\"",
+    "@tap=\"item.action()\"",
+    "@tap=\"onLogout\"",
+    "@tap=\"onReset\"",
+    "@tap=\"onSwitchPortal\""
+   ],
+   "links": [],
+   "fields": [
+    "company.logoText",
+    "member.name"
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\position-detail\\position-detail.vue": {
+   "handlers": [
+    "@tap=\"editPosition\"",
+    "@tap=\"openCandidate(candidate.id)\"",
+    "@tap=\"refreshPosition\"",
+    "@tap=\"toggleStatus\"",
+    "@tap=\"viewAllCandidates\""
+   ],
+   "links": [],
+   "fields": [
+    "candidate.name"
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\position-edit\\position-edit.vue": {
+   "handlers": [
+    "@change=\"form.urgent = $event.detail.value\"",
+    "@change=\"onCityChange\"",
+    "@change=\"onEduChange\"",
+    "@change=\"onExpChange\"",
+    "@change=\"onFieldChange\"",
+    "@confirm=\"addSkill(skillDraft)\"",
+    "@tap=\"addSkill(skill)\"",
+    "@tap=\"addSkill(skillDraft)\"",
+    "@tap=\"form.headcount = Math.max(1, form.headcount - 1)\"",
+    "@tap=\"form.headcount = Math.min(99, form.headcount + 1)\"",
+    "@tap=\"removeSkill(skill)\"",
+    "@tap=\"save('draft')\"",
+    "@tap=\"save('open')\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\positions\\positions.vue": {
+   "handlers": [
+    "@tap=\"changeStatus(position, 'closed')\"",
+    "@tap=\"changeStatus(position, 'open')\"",
+    "@tap=\"changeStatus(position, 'paused')\"",
+    "@tap=\"createPosition\"",
+    "@tap=\"editPosition(position.id)\"",
+    "@tap=\"keyword = ''\"",
+    "@tap=\"openDetail(position.id)\"",
+    "@tap=\"refreshPosition(position)\"",
+    "@tap=\"status = tab.value\""
+   ],
+   "links": [],
+   "fields": [],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  },
+  "src\\pages-hr\\workbench\\workbench.vue": {
+   "handlers": [
+    "@tap=\"goCandidates\"",
+    "@tap=\"goInterviews\"",
+    "@tap=\"goMessages\"",
+    "@tap=\"goPositions\"",
+    "@tap=\"item.action()\"",
+    "@tap=\"onTodo(todo)\"",
+    "@tap=\"openCandidate(candidate.id)\"",
+    "@tap=\"openCandidate(item.candidateId)\"",
+    "@tap=\"openPosition(position.id)\""
+   ],
+   "links": [],
+   "fields": [
+    "candidate.name",
+    "data?.companyName || "
+   ],
+   "hooks": [],
+   "ids": [],
+   "scripts": []
+  }
+ },
+ "wiring": {
+  "handlers": [
+   "@change=\"form.urgent = $event.detail.value\"",
+   "@change=\"onCityChange\"",
+   "@change=\"onEduChange\"",
+   "@change=\"onEducation\"",
+   "@change=\"onExpChange\"",
+   "@change=\"onExperience\"",
+   "@change=\"onFieldChange\"",
+   "@change=\"onWorkStyle(index, $event)\"",
+   "@confirm=\"addSkill(skillDraft)\"",
+   "@confirm=\"addSkills\"",
+   "@confirm=\"handleLogin\"",
+   "@confirm=\"load\"",
+   "@confirm=\"reload\"",
+   "@confirm=\"search\"",
+   "@confirm=\"send\"",
+   "@input=\"onInput\"",
+   "@tap.self=\"showEdit = false\"",
+   "@tap.stop=\"remove(item)\"",
+   "@tap=\"$emit('titleTap')\"",
+   "@tap=\"addSkill(skill)\"",
+   "@tap=\"addSkill(skillDraft)\"",
+   "@tap=\"addSkills\"",
+   "@tap=\"advance\"",
+   "@tap=\"advance(candidate)\"",
+   "@tap=\"agentMode = mode.value\"",
+   "@tap=\"aiAction('assistant')\"",
+   "@tap=\"aiAction('diagnosis')\"",
+   "@tap=\"aiAction('interview')\"",
+   "@tap=\"askAssistant\"",
+   "@tap=\"askQuick(q)\"",
+   "@tap=\"buildPath\"",
+   "@tap=\"candidate.stage === 'rejected' ? restore() : reject()\"",
+   "@tap=\"changeFilter(opt.value)\"",
+   "@tap=\"changeStatus(position, 'closed')\"",
+   "@tap=\"changeStatus(position, 'open')\"",
+   "@tap=\"changeStatus(position, 'paused')\"",
+   "@tap=\"checkHealth\"",
+   "@tap=\"chooseFile\"",
+   "@tap=\"chooseRole\"",
+   "@tap=\"chooseRole(true)\"",
+   "@tap=\"clearKeyword\"",
+   "@tap=\"closeHistory\"",
+   "@tap=\"comingSoon('招聘设置')\"",
+   "@tap=\"companyExpanded = !companyExpanded\"",
+   "@tap=\"copy(candidate.email)\"",
+   "@tap=\"copy(candidate.phone)\"",
+   "@tap=\"createPosition\"",
+   "@tap=\"deleteHistory(item.id)\"",
+   "@tap=\"draft = text\"",
+   "@tap=\"edit.boundary = 'formal'\"",
+   "@tap=\"edit.boundary = 'review'\"",
+   "@tap=\"editPosition\"",
+   "@tap=\"editPosition(position.id)\"",
+   "@tap=\"expandedInfo = !expandedInfo\"",
+   "@tap=\"expandedTeam = !expandedTeam\"",
+   "@tap=\"exportJson\"",
+   "@tap=\"form.boundary = 'formal'\"",
+   "@tap=\"form.boundary = 'review'\"",
+   "@tap=\"form.headcount = Math.max(1, form.headcount - 1)\"",
+   "@tap=\"form.headcount = Math.min(99, form.headcount + 1)\"",
+   "@tap=\"generateReport\"",
+   "@tap=\"goCandidates\"",
+   "@tap=\"goDatasets\"",
+   "@tap=\"goFavorites\"",
+   "@tap=\"goForm\"",
+   "@tap=\"goHrPortal\"",
+   "@tap=\"goInterviews\"",
+   "@tap=\"goJobs\"",
+   "@tap=\"goMessages\"",
+   "@tap=\"goPositions\"",
+   "@tap=\"goQuality\"",
+   "@tap=\"goReviews\"",
+   "@tap=\"goRisk(risk)\"",
+   "@tap=\"goVersions\"",
+   "@tap=\"handleLogin\"",
+   "@tap=\"item.action()\"",
+   "@tap=\"item.route ? goFunnel(item) : null\"",
+   "@tap=\"keyword = ''\"",
+   "@tap=\"keyword = ''; reload()\"",
+   "@tap=\"loadHistory(item.id)\"",
+   "@tap=\"loadMore\"",
+   "@tap=\"logout\"",
+   "@tap=\"newChat\"",
+   "@tap=\"onApprove\"",
+   "@tap=\"onBack\"",
+   "@tap=\"onDraft\"",
+   "@tap=\"onLogout\"",
+   "@tap=\"onPublish\"",
+   "@tap=\"onReject\"",
+   "@tap=\"onReset\"",
+   "@tap=\"onSaveEdit\"",
+   "@tap=\"onSwitchPortal\"",
+   "@tap=\"onSync\"",
+   "@tap=\"onTap(tab)\"",
+   "@tap=\"onTodo(todo)\"",
+   "@tap=\"onUnpublish\"",
+   "@tap=\"openCandidate(candidate.id)\"",
+   "@tap=\"openCandidate(item.candidateId)\"",
+   "@tap=\"openChat\"",
+   "@tap=\"openChat(item)\"",
+   "@tap=\"openCompany(company)\"",
+   "@tap=\"openDetail(candidate.id)\"",
+   "@tap=\"openDetail(item.id)\"",
+   "@tap=\"openDetail(item.roleId)\"",
+   "@tap=\"openDetail(job)\"",
+   "@tap=\"openDetail(position.id)\"",
+   "@tap=\"openHistory\"",
+   "@tap=\"openJob(job)\"",
+   "@tap=\"openPosition(candidate.positionId)\"",
+   "@tap=\"openPosition(position.id)\"",
+   "@tap=\"openResumePicker\"",
+   "@tap=\"openUrl(ev.url)\"",
+   "@tap=\"pick(item)\"",
+   "@tap=\"pickScore(item.value)\"",
+   "@tap=\"pickStage(tab.value)\"",
+   "@tap=\"pickTab(tab.value)\"",
+   "@tap=\"portalIndex = index\"",
+   "@tap=\"questionCount = count\"",
+   "@tap=\"refreshPosition\"",
+   "@tap=\"refreshPosition(position)\"",
+   "@tap=\"reject(candidate)\"",
+   "@tap=\"reload\"",
+   "@tap=\"relogin\"",
+   "@tap=\"removeCtx(chip.key)\"",
+   "@tap=\"removeResume\"",
+   "@tap=\"removeSkill(skill)\"",
+   "@tap=\"restart\"",
+   "@tap=\"restore(candidate.id)\"",
+   "@tap=\"runMatch\"",
+   "@tap=\"save('draft')\"",
+   "@tap=\"save('open')\"",
+   "@tap=\"search\"",
+   "@tap=\"send\"",
+   "@tap=\"showCreate = !showCreate\"",
+   "@tap=\"showCreate = false\"",
+   "@tap=\"showEdit = !showEdit\"",
+   "@tap=\"showEdit = false\"",
+   "@tap=\"showEdit = true\"",
+   "@tap=\"startInterview\"",
+   "@tap=\"status = tab.value\"",
+   "@tap=\"submitAnswer\"",
+   "@tap=\"submitCreate\"",
+   "@tap=\"submitEdit\"",
+   "@tap=\"switchTo('enterprise')\"",
+   "@tap=\"switchTo('personal')\"",
+   "@tap=\"toggleFavorite\"",
+   "@tap=\"toggleQA(qi)\"",
+   "@tap=\"toggleReport(item.id)\"",
+   "@tap=\"toggleSkill(skill)\"",
+   "@tap=\"toggleSkill(skill.name)\"",
+   "@tap=\"toggleSort\"",
+   "@tap=\"toggleStage(idx)\"",
+   "@tap=\"toggleStatus\"",
+   "@tap=\"uploadResumeFile\"",
+   "@tap=\"viewAllCandidates\""
+  ],
+  "links": [],
+  "fields": [
+   "candidate.name",
+   "company.logoText",
+   "data?.companyName || ",
+   "item.candidateName",
+   "member.name",
+   "name",
+   "我"
+  ],
+  "hooks": [],
+  "ids": [
+   "areaFill",
+   "chat-bottom"
+  ]
+ },
+ "scripts": {},
+ "pages": {}
+}
