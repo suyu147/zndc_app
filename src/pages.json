@@ -131,11 +131,11 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "职能洞察",
     "navigationBarBackgroundColor": "#FFFFFF",
-    "backgroundColor": "#F5F6F8"
+    "backgroundColor": "#f4f6f6"
   },
   "tabBar": {
-    "color": "#8F95A1",
-    "selectedColor": "#00BEBD",
+    "color": "#65736c",
+    "selectedColor": "#00766f",
     "backgroundColor": "#FFFFFF",
     "borderStyle": "black",
     "list": [

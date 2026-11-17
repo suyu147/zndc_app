@@ -1,5 +1,6 @@
 /* Hallmark · shape: app screen · genre: modern-minimal · theme: brand · redesign: full · nav: kept · signature: role list · states: existing · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V3 · weakest: V, shared shell keeps task-specific screen layouts */
+/* Hallmark · finish-review: subagent screenshots ship; source reviewed in-thread · render: Playwright fallback · no image slots */
 * { box-sizing: border-box; }
 html, body { overflow-x: clip; }
 body { margin: 0; background: var(--color-surface); color: var(--color-ink); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
@@ -12,7 +13,7 @@ input, textarea { caret-color: var(--color-primary); }
 ::selection { background: var(--color-primary-soft); color: var(--color-primary); }
 button[disabled], [aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
 button:active, [role="button"]:active { opacity: .75; }
-.card { background: var(--color-paper); border-radius: 0; padding: var(--space-lg); margin: var(--space-sm) 0 0; }
+.card { background: var(--color-paper); border-radius: var(--radius-card); padding: 28rpx; margin: 16rpx 24rpx 0; }
 .section-title { display: flex; align-items: center; justify-content: space-between; color: var(--color-ink); font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-md); min-width: 0; overflow-wrap: break-word; }
 .section-title::before, .hr-sec-title::before { display: none; }
 .btn-primary, .btn-secondary, .btn-plain { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 88rpx; height: auto; line-height: 1.4; border-radius: var(--radius-input); padding: var(--space-md); font-size: 30rpx; font-weight: 500; box-shadow: none; }
@@ -55,3 +56,42 @@ button:active, [role="button"]:active { opacity: .75; }
   uni-page-head, uni-tabbar { left: 0; right: 0; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+
+/* Shared recruitment surfaces and keyboard feedback. */
+html { scrollbar-color: var(--color-brand-mid) var(--color-surface); }
+.section-title, .hr-sec-title, .hello, .user-name { overflow-wrap: break-word; min-width: 0; }
+button, [role="button"], uni-picker { -webkit-tap-highlight-color: var(--color-transparent); }
+button, [role="button"] { cursor: pointer; }
+.btn-primary, .hr-btn--primary { font-weight: 600; border: 1px solid var(--color-primary); }
+.btn-secondary { border: 1px solid var(--color-brand-mid); background: var(--color-paper); }
+.btn-plain, .hr-btn--ghost { border-color: var(--color-field-border); }
+input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+.loading-text, .empty-text, .hr-empty, .hr-loading { padding: 48rpx 32rpx; }
+.hr-card { margin: 16rpx 24rpx 0; border-radius: var(--radius-card); padding: 28rpx; }
+.hr-tag, .hr-badge { padding: 4rpx 12rpx; }
+.hr-tabbar, .admin-tabbar { border-top-color: var(--color-rule); }
+uni-page-head .uni-page-head { background: var(--color-paper); }
+uni-page-head .uni-page-head__title { font-weight: 600; }
+uni-tabbar .uni-tabbar { border-top: 1px solid var(--color-rule); }
+uni-tabbar .uni-tabbar-border { display: none; }
+uni-tabbar .uni-tabbar__item { min-height: 52px; }
+uni-tabbar .uni-tabbar__label { font-size: 11px !important; }
+uni-tabbar .uni-tabbar__item.uni-tabbar__item--active { color: var(--color-primary); }
+@media (hover: hover) {
+  .btn-primary:hover, .hr-btn--primary:hover { opacity: .9; }
+  .btn-secondary:hover, .btn-plain:hover, .hr-btn--ghost:hover { background: var(--color-primary-soft); }
+  [role="button"]:hover { text-decoration-color: var(--color-primary); }
+}
+@media (min-width: 768px) {
+  body { background: var(--color-page-ground); }
+  uni-app { box-shadow: var(--shadow-float); min-height: 100vh; }
+}
+
+@media (min-width: 768px) {
+  uni-page-head .uni-page-head, uni-tabbar .uni-tabbar { max-width: var(--container); margin-inline: auto; left: 0; right: 0; }
+}
+
+@media (min-width: 768px) { uni-page-refresh { max-width: var(--container); } }
+
+.btn-primary[disabled], .hr-btn--primary[disabled] { background: var(--color-primary); color: var(--color-paper); border-color: var(--color-primary); }

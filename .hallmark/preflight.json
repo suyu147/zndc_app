@@ -1,26 +1,21 @@
 {
-  "date": "2026-11-16",
-  "scope": "app",
-  "mode": "redesign",
-  "depth": "full",
-  "brand": "existing zndc teal, BOSS layout reference only",
-  "citations": [
-    "src/App.vue:14",
-    "src/pages.json:1",
-    "src/api/request.ts:1",
-    "src/hr/api.ts:1"
+  "scanned": "2026-11-17",
+  "findings": {
+    "framework": "Vue 3 + uni-app (package.json:13)",
+    "fonts": "system Chinese sans-serif (tokens.css:30)",
+    "palette": "existing teal primary and mint surfaces (tokens.css:4)",
+    "system": "locked design.md, evolved per user request",
+    "scope": "mobile app screens; no landing hero"
+  },
+  "preserve": [
+    "routes, form fields and handlers",
+    "API calls and data meaning",
+    "teal identity and AppIcon"
   ],
-  "kept": [
-    "routes",
-    "events",
-    "API calls",
-    "business facts"
-  ],
-  "introduced": [
-    "semantic tokens",
-    "line icons",
-    "flat task sections"
-  ],
-  "git": "not a git repository; originals backed up",
-  "before": ".hallmark/before.json"
+  "introduce": [
+    "mint search headers",
+    "working career shortcuts",
+    "inset role list surfaces",
+    "page-specific hierarchy"
+  ]
 }

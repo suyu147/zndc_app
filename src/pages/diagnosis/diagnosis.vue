@@ -1,5 +1,10 @@
 <template>
   <view class="page tool-page">
+    <view v-if="phase === 'form'" class="diagnosis-intro">
+      <view class="diagnosis-intro-title">找到你的职业着力点</view>
+      <view class="diagnosis-intro-text">从目标岗位出发，看看你的技能与要求有多契合。</view>
+      <view class="diagnosis-path"><view><AppIcon name="briefcase" :size="28" /><text>选择岗位</text></view><AppIcon name="chevron-right" :size="22" /><view><AppIcon name="file" :size="28" /><text>完善技能</text></view><AppIcon name="chevron-right" :size="22" /><view><AppIcon name="target" :size="28" /><text>查看匹配</text></view></view>
+    </view>
     <!-- ============ 表单区 ============ -->
     <view v-if="phase === 'form'">
       <!-- 目标岗位 -->
@@ -517,8 +522,6 @@ function askAssistant() {
 /* Hallmark · shape: app screen · genre: modern-minimal · theme: brand · redesign: full · nav: kept · signature: task list · states: existing · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V3 · weakest: V, shared tokens preserve distinct task layouts */
 
-/* Hallmark · theme: project teal · shape: app screen · redesign: full · scope: app */
-/* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V3 · weakest: V; flattened repeated panels into task sections. */
 .page {
   padding-bottom: calc(60rpx + var(--window-bottom, var(--space-0px)));
 }
@@ -1069,4 +1072,28 @@ function askAssistant() {
 button:focus-visible, input:focus-visible, textarea:focus-visible, [tabindex]:focus-visible { outline:2px solid var(--color-primary); outline-offset:2px; }
 @media (max-width:360px) { .tool-page .card { padding: 28rpx; } .dim-label { width:140rpx; } .resume-actions { flex-direction:column; } .score-card { gap: 16rpx; } .score-left { width:150rpx; } }
 @media (prefers-reduced-motion:reduce) { * { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
+.tool-page { padding-top: 0; }
+.diagnosis-intro { padding: 32rpx 32rpx 30rpx; background: var(--color-brand-wash); }
+.diagnosis-intro-title { min-width: 0; overflow-wrap: break-word; font-size: 36rpx; font-weight: 600; color: var(--color-ink); }
+.diagnosis-intro-text { margin-top: 10rpx; font-size: 25rpx; line-height: 1.7; color: var(--color-secondary); }
+.diagnosis-path { display: flex; align-items: center; justify-content: space-between; gap: 8rpx; padding-top: 26rpx; color: var(--color-primary); }
+.diagnosis-path > view { display: flex; align-items: center; gap: 8rpx; font-size: 23rpx; white-space: nowrap; }
+.tool-page .card { margin: 20rpx 24rpx 0; padding: 28rpx; border-radius: var(--radius-card); }
+.tool-page .section-title { align-items: flex-start; gap: 12rpx; flex-wrap: wrap; margin-bottom: 22rpx; font-size: 30rpx; }
+.tool-page .score-tip { font-size: 22rpx; line-height: 1.6; font-weight: 400; color: var(--color-muted); }
+.role-empty { padding: 28rpx 24rpx; background: var(--color-brand-wash); border: 1px dashed var(--color-brand-mid); border-radius: var(--radius-input); }
+.role-empty-main { display: block; color: var(--color-primary); font-size: 28rpx; font-weight: 500; }
+.role-empty-sub { display: block; margin-top: 10rpx; font-size: 24rpx; line-height: 1.7; color: var(--color-muted); }
+.role-box { padding: 0; background: var(--color-transparent); }
+.role-name { font-size: 32rpx; font-weight: 600; color: var(--color-ink); }
+.resume-actions { display: flex; flex-wrap: wrap; gap: 16rpx; }
+.resume-btn { flex: 1; min-width: 220rpx; min-height: 80rpx; display: flex; align-items: center; justify-content: center; margin: 0; border-radius: var(--radius-input); background: var(--color-primary-soft); color: var(--color-primary); font-size: 26rpx; line-height: 1.4; padding: 16rpx 12rpx; }
+.resume-btn.ghost { background: var(--color-paper); border: 1px solid var(--color-field-border); color: var(--color-secondary); }
+.add-row { align-items: center; gap: 16rpx; margin-top: 22rpx; }
+.add-input { min-height: 84rpx; padding: 0 20rpx; border: 1px solid var(--color-field-border); border-radius: var(--radius-input); background: var(--color-paper); font-size: 26rpx; }
+.add-btn { min-height: 88rpx; display: flex; align-items: center; padding: 0 20rpx; color: var(--color-primary); font-size: 27rpx; }
+.tool-page .row { min-height: 90rpx; }
+.tool-page .submit-wrap { padding: 28rpx 24rpx 36rpx; }
+.submit-tip { margin-top: 18rpx; line-height: 1.7; color: var(--color-muted); font-size: 23rpx; }
+@media (max-width: 350px) { .diagnosis-intro { padding-inline: 24rpx; } .diagnosis-path > view { gap: 5rpx; font-size: 22rpx; } }
 </style>

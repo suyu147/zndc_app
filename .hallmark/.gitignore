@@ -1,0 +1,10 @@
+shots/
+before/
+before.json
+before.txt
+compare.html
+
+refresh/
+*-refresh.cjs
+refresh-ui.cjs
+dev-server*.log

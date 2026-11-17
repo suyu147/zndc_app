@@ -1,0 +1,25 @@
+[
+ {
+  "date": "2026-11-17",
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "app",
+  "theme": "existing teal brand",
+  "shape": "app screen",
+  "nav": "existing tabs and routes",
+  "signature": "recruitment role list and career tools",
+  "imagery": "existing product UI",
+  "photos": [],
+  "waived": [],
+  "prompt": "优化职能洞察移动前端，参考成熟招聘产品的信息层次，保持现有青绿品牌，减少模板化装饰",
+  "review": "ship; independent screenshot review, source reviewed by primary",
+  "checks": {
+   "typeCheck": "pass",
+   "h5Build": "pass",
+   "viewportChecks": 24,
+   "handlerPreservation": "pass",
+   "staticFloor": 0,
+   "staticReflex": 0
+  }
+ }
+]
